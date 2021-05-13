@@ -53,14 +53,14 @@ def Mic2Text():
         speak("Please repeat")
         return None
 
-def ListenInBg():
-    r = sr.Recognizer()
-    r.listen_in_background(sr.Microphone(),callback,phrase_time_limit=2)
+# def ListenInBg():
+#     r = sr.Recognizer()
+#     r.listen_in_background(sr.Microphone(),callback,phrase_time_limit=2)
   
-    try:
-        print("You said " + recognizer.recognize_google(audio,language='en-in'))  # received audio data, now need to recognize it
-    except LookupError:
-        print("Oops! Didn't catch that")
+#     try:
+#         print("You said " + recognizer.recognize_google(audio,language='en-in'))  # received audio data, now need to recognize it
+#     except LookupError:
+#         print("Oops! Didn't catch that")
 
 
 def news():
