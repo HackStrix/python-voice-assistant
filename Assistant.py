@@ -96,8 +96,12 @@ def cpu():
     usage = str(psutil.cpu_percent())
     speak(usage)
     print(usage)
+    
+
+def battery():
     battery = psutil.sensors_battery()
     speak("Battery is at ")
     speak(str(battery.percent))
+    
 
 executecommand()
